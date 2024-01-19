@@ -1,0 +1,30 @@
+{
+  "name": "zwtext",
+  "version": "1.0.0",
+  "description": "ZWT (Zero Width Text) encoder and decorder",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kawaz/zwtext.git"
+  },
+  "keywords": [
+    "zwt",
+    "zwsp"
+  ],
+  "author": "Yoshiaki Kawazu <kawazzz@gmail.com> (https://twitter.com/kawaz)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kawaz/zwtext/issues"
+  },
+  "homepage": "https://github.com/kawaz/zwtext#readme",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
