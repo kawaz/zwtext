@@ -1,35 +1,36 @@
 {
-	"name": "zwtext",
-	"version": "1.0.0",
-	"description": "ZWT (Zero Width Text) encoder and decorder",
-	"module": "dist/index.js",
-	"type": "module",
-	"exports": {
-		"import": "./dist/index.js",
-		"types": "./dist/index.d.ts",
-		"require": "./dist/cjs/index.js"
-	},
-	"scripts": {
-		"build": "bun build.ts && bun build:cjs",
-		"build:cjs": "esbuild src/index.ts --outdir=dist/cjs --format=cjs --minify",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/kawaz/zwtext.git"
-	},
-	"keywords": ["zwt", "zwsp"],
-	"author": "Yoshiaki Kawazu <kawazzz@gmail.com> (https://twitter.com/kawaz)",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/kawaz/zwtext/issues"
-	},
-	"homepage": "https://github.com/kawaz/zwtext#readme",
-	"devDependencies": {
-		"@types/bun": "latest",
-		"bun-plugin-dts": "^0.2.1"
-	},
-	"peerDependencies": {
-		"typescript": "^5.0.0"
-	}
+  "name": "zwtext",
+  "version": "1.0.0",
+  "description": "ZWT (Zero Width Text) encoder and decorder",
+  "module": "dist/index.js",
+  "type": "module",
+  "exports": {
+    "import": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "require": "./dist/cjs/index.js"
+  },
+  "scripts": {
+    "build": "bun build.ts && bun build:cjs",
+    "build:cjs": "esbuild src/index.ts --outdir=dist/cjs --format=cjs --minify",
+    "lint": "bun x biome check . --apply --diagnostic-level=warn",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kawaz/zwtext.git"
+  },
+  "keywords": ["zwt", "zwsp"],
+  "author": "Yoshiaki Kawazu <kawazzz@gmail.com> (https://twitter.com/kawaz)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kawaz/zwtext/issues"
+  },
+  "homepage": "https://github.com/kawaz/zwtext#readme",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bun-plugin-dts": "^0.2.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
 }
