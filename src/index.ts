@@ -31,7 +31,6 @@ const decodeZWsToUint8Array = (text: string) =>
 				new Uint8Array((zo.match(/.{8}/g) || []).map((b) => parseInt(b, 2))),
 		);
 
-
 /**
  * Decode ZWTs (zero-width-texts) in text into string[]
  * @param {string} text string containing ZWTs (zero-width-text)
@@ -53,7 +52,8 @@ const decodeZW = (text: string, i = 0) => decodeZWs(text)[i] ?? "";
  * @param {string} text
  * @returns {string}
  */
-const stripZW = (text: string) => text.replace(/\u200c(?:[\u200b\u200d]{8})+\u200c/g, "");
+const stripZW = (text: string) =>
+	text.replace(/\u200c(?:[\u200b\u200d]{8})+\u200c/g, "");
 
 /**
  * Reveal ZWTs (zero-width-texts) in text
@@ -63,12 +63,11 @@ const stripZW = (text: string) => text.replace(/\u200c(?:[\u200b\u200d]{8})+\u20
 const revealZW = (text: string) =>
 	text.replace(/\u200c(?:[\u200b\u200d]{8})+\u200c/g, (z) => decodeZW(z));
 
-
 export default {
-    encodeZW,
-    decodeZW,
-    decodeZWs,
-    decodeZWsToUint8Array,
-    revealZW,
-    stripZW
-}
+	encodeZW,
+	decodeZW,
+	decodeZWs,
+	decodeZWsToUint8Array,
+	revealZW,
+	stripZW,
+};

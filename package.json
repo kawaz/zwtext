@@ -2,7 +2,7 @@
   "name": "zwtext",
   "version": "1.0.0",
   "description": "ZWT (Zero Width Text) encoder and decorder",
-  "module": "index.ts",
+  "module": "src/index.ts",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
