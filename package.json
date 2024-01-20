@@ -2,7 +2,6 @@
   "name": "zwtext",
   "version": "1.0.0",
   "description": "ZWT (Zero Width Text) encoder and decorder",
-  "module": "dist/index.js",
   "type": "module",
   "exports": {
     "import": "./dist/index.js",
@@ -12,8 +11,9 @@
   "scripts": {
     "build": "bun build.ts && bun build:cjs",
     "build:cjs": "esbuild src/index.ts --outdir=dist/cjs --format=cjs --minify",
+    "test": "bun test",
     "lint": "bun x biome check . --apply --diagnostic-level=warn",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ci": "bun x biome ci . --diagnostic-level=warn"
   },
   "repository": {
     "type": "git",
