@@ -8,13 +8,7 @@ const encodeZW = (data: string | Uint8Array): string => {
     return encodeZW(new TextEncoder().encode(data));
   }
   return `\u200c${[...data]
-    .map((n) =>
-      n
-        .toString(2)
-        .padStart(8, "0")
-        .replace(/0/g, "\u200b")
-        .replace(/1/g, "\u200d"),
-    )
+    .map((n) => n.toString(2).padStart(8, "0").replace(/0/g, "\u200b").replace(/1/g, "\u200d"))
     .join("")}\u200c`;
 };
 
