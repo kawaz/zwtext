@@ -7,6 +7,9 @@ export const encodeZW = (data: string | Uint8Array): string => {
   if (typeof data === "string") {
     return encodeZW(new TextEncoder().encode(data));
   }
+  if (data.length === 0) {
+    return "";
+  }
   return `\u200c${[...data]
     .map((n) => n.toString(2).padStart(8, "0").replace(/0/g, "\u200b").replace(/1/g, "\u200d"))
     .join("")}\u200c`;
