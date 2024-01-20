@@ -13,7 +13,8 @@
     "build:cjs": "esbuild src/index.ts --outdir=dist/cjs --format=cjs --minify",
     "test": "bun test",
     "lint": "bun x biome check . --apply --diagnostic-level=warn",
-    "ci": "bun x biome ci . --diagnostic-level=warn"
+    "lint:ci": "bun x biome ci . --diagnostic-level=warn",
+    "clean": "rm -rf dist"
   },
   "repository": {
     "type": "git",
