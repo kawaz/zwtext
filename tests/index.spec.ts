@@ -1,5 +1,7 @@
 import { describe, expect, it } from "bun:test";
 import { decodeZW, decodeZWs, decodeZWsToUint8Array, encodeZW, revealZW, stripZW } from "../src";
+// import { decodeZW, decodeZWs, decodeZWsToUint8Array, encodeZW, revealZW, stripZW } from "../dist";
+// const { decodeZW, decodeZWs, decodeZWsToUint8Array, encodeZW, revealZW, stripZW } = require("../dist/cjs");
 
 describe("ZWT Encoding and Decoding", () => {
   describe("encodeZW", () => {
