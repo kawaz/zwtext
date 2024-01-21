@@ -34,5 +34,5 @@ text = `Hello${secret1}!${secret2}?`; // looks like 'Hello!?', 267 characters, 7
 decodeZW(text); // ' secret world'
 revealZW(text); // 'Hello secret world! こんにちわ✋?'
 striped = stripZW(text); // 'Hello!?'
-decodeZWs(striped); // '' (length is 0)
+decodeZWs(striped); // '' (length is 7)
 ```
