@@ -11,10 +11,12 @@
   "scripts": {
     "build": "bun build.ts && bun build:cjs",
     "build:cjs": "esbuild src/index.ts --outdir=dist/cjs --format=cjs --minify",
-    "test": "bun test",
+    "test": "bun test --coverage",
+    "test:production": "NODE_ENV=production bun test --coverage",
     "lint": "bun x biome check . --apply --diagnostic-level=warn",
     "lint:ci": "bun x biome ci . --diagnostic-level=warn",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "prepublish": "bun run lint:ci && bun run test:production"
   },
   "repository": {
     "type": "git",
