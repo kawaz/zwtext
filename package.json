@@ -1,6 +1,6 @@
 {
   "name": "zwtext",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "ZWT (Zero Width Text) encoder and decoder",
   "type": "module",
   "module": "dist/index.js",
