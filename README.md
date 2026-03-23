@@ -1,4 +1,4 @@
-# zwtext | ZWT (Zero Width Text) encoder and decorder
+# zwtext | ZWT (Zero Width Text) encoder and decoder
 
 ZWT (zero width text) is an invisible string encoding that allows embedding any data into text without visually affecting it, by utilizing zero-width characters in UNICODE.
 
