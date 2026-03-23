@@ -1,6 +1,6 @@
 {
   "name": "zwtext",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ZWT (Zero Width Text) encoder and decoder",
   "type": "module",
   "module": "dist/index.js",
@@ -26,7 +26,10 @@
     "type": "git",
     "url": "git+https://github.com/kawaz/zwtext.git"
   },
-  "keywords": ["zwt", "zwsp"],
+  "keywords": [
+    "zwt",
+    "zwsp"
+  ],
   "author": "Yoshiaki Kawazu <kawazzz@gmail.com> (https://twitter.com/kawaz)",
   "license": "MIT",
   "bugs": {
