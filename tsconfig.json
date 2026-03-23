@@ -11,12 +11,15 @@
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
-    "noEmit": true,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "outDir": "dist",
 
     /* Linting */
     "skipLibCheck": true,
     "strict": true,
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "include": ["src"]
 }
